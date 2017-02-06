@@ -81,9 +81,9 @@ gulp.task('serve', function () {
   });
 
 
-  app.get('*', function(req, res){
-      res.status(404).sendFile(path.join(__dirname + '/404.html'), 404);
-  });
+  // app.get('*', function(req, res){
+  //     res.status(404).sendFile(path.join(__dirname + '/404.html'), 404);
+  // });
 
   // REGISTER OUR ROUTES -------------------------------
   // all of our routes will be prefixed with /api
