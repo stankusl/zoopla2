@@ -2,7 +2,7 @@
    'use strict';
 
     // Single Page Application - just because.
-    angular.module('application', ['ui.router', 'angularGrid'])
+    angular.module('application', ['ui.router'])
 
     .run(['$rootScope', '$state', function($rootScope, $state) {
 
