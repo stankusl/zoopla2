@@ -1,6 +1,6 @@
 # Zoopla2 TT
 
-# URL: https://tiger-spike.herokuapp.com/
+# URL: https://zoopla2.herokuapp.com/
 
 ### Preacquisitions
 * NodeJS : http://nodejs.org
