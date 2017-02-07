@@ -7,8 +7,15 @@
 
         $stateProvider
 
-        .state('homepage', {
+        .state('search', {
             url: '/',
+            templateUrl: './app/components/search/search-view.html',
+            controller: 'SearchController',
+            controllerAs: 'Search'
+        })
+
+        .state('homepage', {
+            url: '/results',
             templateUrl: './app/components/home/home-view.html',
             controller: 'HomeController',
             controllerAs: 'Home'
