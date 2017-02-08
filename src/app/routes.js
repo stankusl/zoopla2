@@ -9,7 +9,7 @@
 
         .state('homepage', {
             url: '/',
-            templateUrl: './app/components/home/home-view.html',
+            templateUrl: './app/pages/home/home-view.html',
             controller: 'HomeController',
             controllerAs: 'Home'
         })

@@ -53,20 +53,10 @@ var path = {
 
 
 gulp.task('serve', function () {
-  const MongoClient   = require('mongodb').MongoClient;
   var express         = require('express');
   var app             = express();
   var bodyParser      = require('body-parser');
   var path            = require('path');
-  var db;
-
-  MongoClient.connect('mongodb://test:test1234@ds049744.mlab.com:49744/exe1db', (err, database) => {
-    if (err) return console.log(err)
-    db = database
-    app.listen(3000, () => {
-      console.log('listening on 3000')
-    })
-  })
 
 
   app.use(bodyParser.urlencoded({ extended: true }));
@@ -79,11 +69,6 @@ gulp.task('serve', function () {
   router.get('/', function(req, res) {
       res.sendFile(path.join(__dirname + '/data.json'));
   });
-
-
-  // app.get('*', function(req, res){
-  //     res.status(404).sendFile(path.join(__dirname + '/404.html'), 404);
-  // });
 
   // REGISTER OUR ROUTES -------------------------------
   // all of our routes will be prefixed with /api
